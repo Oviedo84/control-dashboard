@@ -28,7 +28,7 @@ use([
   LegendComponent,
 ]);
 
-const { data, isPending, isError } = useWaterTankPlot();
+const { data } = useWaterTankPlot();
 
 const option = computed<EChartsOption>(() => {
   return {
