@@ -9,7 +9,7 @@ const getWaterTankPlot = async () => {
   const response = await axiosInstance.get<PaginatedResponse<WaterTank>>(
     "water-tank/",
     {
-      params: { pageSize: 60 },
+      params: { pageSize: 100 },
     },
   );
 
