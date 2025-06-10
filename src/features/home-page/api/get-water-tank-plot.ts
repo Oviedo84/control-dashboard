@@ -9,7 +9,7 @@ const getWaterTankPlot = async () => {
   const response = await axiosInstance.get<PaginatedResponse<WaterTank>>(
     "water-tank/",
     {
-      params: { pageSize: 20 },
+      params: { pageSize: 40 },
     },
   );
 
@@ -20,4 +20,5 @@ export const useWaterTankPlot = () =>
   useQuery({
     queryKey: ["water-tank-plot"],
     queryFn: () => getWaterTankPlot(),
+    refetchInterval: 30 * 1000,
   });
