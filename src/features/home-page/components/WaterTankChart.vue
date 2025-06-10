@@ -36,10 +36,9 @@ const option = computed<EChartsOption>(() => {
       text: "Nivel del Agua Respecto al Tiempo",
       left: "center",
     },
-    // tooltip: {
-    //   trigger: "item",
-    //   formatter: "{a} <br/>{b} : {c} ({d}%)",
-    // },
+    tooltip: {
+      trigger: "item",
+    },
     xAxis: {
       type: "category",
       data:
