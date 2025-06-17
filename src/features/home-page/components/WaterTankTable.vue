@@ -44,17 +44,17 @@ import { useWaterTank } from "../api/get-water-tank";
 
 const headers = ref<DataTableHeader[]>([
   {
-    title: "Nivel del Agua",
+    title: "Nivel del Agua (cm)",
     align: "start",
     key: "waterLevel",
   },
-  { title: "Nivel de Referencia", align: "end", key: "referenceValue" },
+  { title: "Nivel de Referencia (cm)", align: "end", key: "referenceValue" },
   {
-    title: "Flujo de Entrada",
+    title: "Flujo de Entrada (mm^3/s)",
     align: "end",
     key: "inflow",
   },
-  { title: "Flujo de Salida", align: "end", key: "outflow" },
+  { title: "Flujo de Salida (mm^3/s)", align: "end", key: "outflow" },
   {
     title: "Fecha y Hora",
     align: "end",
