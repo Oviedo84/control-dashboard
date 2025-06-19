@@ -50,11 +50,11 @@ const headers = ref<DataTableHeader[]>([
   },
   { title: "Nivel de Referencia (cm)", align: "end", key: "referenceValue" },
   {
-    title: "Flujo de Entrada (mm^3/s)",
+    title: "Flujo de Entrada (mu^3/s)",
     align: "end",
     key: "inflow",
   },
-  { title: "Flujo de Salida (mm^3/s)", align: "end", key: "outflow" },
+  { title: "Flujo de Salida (mu^3/s)", align: "end", key: "outflow" },
   {
     title: "Fecha y Hora",
     align: "end",
